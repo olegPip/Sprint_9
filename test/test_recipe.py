@@ -17,6 +17,6 @@ class TestCreateRecipe:
             ingredients=RECIPE["ingredients"],
             cooking_time=str(RECIPE["time"]),
             description=RECIPE["description"],
-            image_file="omlet.jpg",
+            image_file=RECIPE["image"],
         )
         assert recipes_page.wait_for_recipe_to_load(RECIPE["name"])

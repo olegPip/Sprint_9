@@ -107,7 +107,7 @@ class RecipesPage(BasePage):
 
     @allure.step("Создать рецепт: {name}")
     def create_recipe(
-        self, name, ingredients, cooking_time, description, image_file="omlet.jpg"
+        self, name, ingredients, cooking_time, description, image_file="image1.jpg"
     ):
         self.open_create_recipe_page()
         self.enter_recipe_name(name)
