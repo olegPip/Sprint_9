@@ -4,7 +4,7 @@ services:
     ports:
       - "4444:4444"
     volumes:
-      - ./browsers.json.json:/etc/selenoid/browsers.json.json:ro
+      - ./browsers.json.json:/etc/selenoid/browsers.json:ro
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
       - OVERRIDE_VIDEO_OUTPUT_DIR=/tmp/video
