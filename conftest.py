@@ -12,7 +12,7 @@ from pages.login_page import LoginPage
 @pytest.fixture(scope="function")
 def driver():
     selenoid_url = os.getenv("SELENOID_URL", "http://localhost:4444/wd/hub")
-    use_selenoid = os.getenv("USE_SELENOID", "true").lower() == "true"
+    use_selenoid = os.getenv("USE_SELENOID", "false").lower() == "true"
 
     if use_selenoid:
         chrome_options = Options()
